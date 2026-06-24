@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Greeting Page</title>
+</head>
+<body>
+<h2>Enter Your Name</h2>
+	<form th:action="@{/greet}" method="post">
+    	<input type="text" name="name" placeholder="Enter your name" required />
+    	<button type="submit">Greet</button>
+    </form>
+    <br/>
+    <a th:href="@{/register}">Register</a>
+</body>
+</html>
